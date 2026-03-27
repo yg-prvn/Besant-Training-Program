@@ -1,0 +1,70 @@
+#nav {
+    position: fixed;   /* makes it fixed */
+    top: 8px;            /* stick to top */
+    width: 100%;       /* full width */
+    z-index: 1000;     /* stay above other elements */
+}
+
+#paging {
+    position: fixed;   /* makes it fixed */
+    bottom: 8px;            /* stick to top */
+    width: 100%;       /* full width */
+    z-index: 1000;     /* stay above other elements */
+}
+
+/* Remove default list styling */
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes items horizontal */
+    background-color: #333;
+
+    
+}
+
+#paging ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes items horizontal */
+    background-color: #333;
+    justify-content: center;
+}
+
+/* Style each list item */
+nav ul li {
+    margin: 0;
+}
+
+/* Style links */
+#nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#paging ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius:  5px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+body {
+    margin-top: 60px;
+}
+
+#gradient {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, red, yellow);
+}
