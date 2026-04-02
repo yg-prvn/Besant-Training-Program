@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .inline {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form action="#" method="POST">
+
+        <!-- Text -->
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Number -->
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="100">
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <!-- Time -->
+        <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <!-- Color -->
+        <div class="form-group">
+            <label for="color">Favorite Color</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <!-- Range -->
+        <div class="form-group">
+            <label for="range">Satisfaction</label>
+            <input type="range" id="range" name="range" min="0" max="10">
+        </div>
+
+        <!-- Radio -->
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="inline">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+            <label>Skills</label>
+            <div class="inline">
+                <input type="checkbox" name="skills" value="html"> HTML
+                <input type="checkbox" name="skills" value="css"> CSS
+                <input type="checkbox" name="skills" value="js"> JS
+            </div>
+        </div>
+
+        <!-- File -->
+        <div class="form-group">
+            <label for="file">Upload Resume</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+        <!-- Select -->
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option>India</option>
+                <option>Germany</option>
+                <option>Japan</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="4"></textarea>
+        </div>
+
+        <!-- Hidden -->
+        <input type="hidden" name="user_id" value="12345">
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
